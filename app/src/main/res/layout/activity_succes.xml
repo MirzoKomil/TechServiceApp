@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.coworking.texxizmat.SuccesActivity">
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                        android:id="@+id/sa_chek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/search"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ma'lumot mavjud emas"
+                            android:textColor="#AEB2B3"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Manzil: "
+                                android:textColor="#AFAFAF" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:textColor="#000" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="30dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:text="Hisob raqami: "
+                                android:textColor="#AFAFAF" />
+
+                            <TextView
+
+                                android:id="@+id/tv_accountNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="30dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:textColor="#000" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:text="Abonent"
+                                android:textColor="#AFAFAF" />
+
+                            <TextView
+                                android:id="@+id/tv_fullName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:textColor="#000" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:text="Tel.raqam: "
+                                android:textColor="#AFAFAF" />
+
+                            <TextView
+                                android:id="@+id/tv_phoneNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/robotoflex_variable"
+                                android:textColor="#000" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:drawableRight="@drawable/baseline_calendar_month_24"
+                android:maxLength="20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sa_chek" />
+
+
+            <TextView
+                android:id="@+id/tvReestr"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:maxLength="20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/sa_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableStart="@drawable/correct"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Sizning joylashuvingiz aniqlandi (tez kunda)"
+                        android:textColor="#CACACA"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvReestr" />
+
+                    <RelativeLayout
+                        android:id="@+id/sa_relativeLayout"
+                        android:layout_width="346dp"
+                        android:layout_height="315dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_textView">
+
+                        <ImageView
+                            android:id="@+id/sa_foto_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="453dp"
+                            android:background="@drawable/solid" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/sa_textView3"
+                        android:layout_width="151dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Tekshiruvdan oldingi uskuna holati"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_relativeLayout" />
+
+
+            <TextView
+                android:id="@+id/sa_textView2"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/robotoflex_variable"
+                android:text="Tekshiruvdan keyingi uskuna holati"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/sa_textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sa_textView3" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/sa_relativeLayout2"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="@+id/sa_textView3"
+                        app:layout_constraintStart_toStartOf="@+id/sa_textView3"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_textView3">
+
+                        <ImageView
+                            android:id="@+id/sa_foto_big2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/solid" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/sa_relativeLayout3"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/sa_textView2"
+                        app:layout_constraintStart_toStartOf="@+id/sa_textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_textView2">
+
+                        <ImageView
+                            android:id="@+id/sa_foto_big3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/solid" />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Gaz jihozlari standartlarga javob beradi"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_relativeLayout3" />
+
+                    <TextView
+                        android:id="@+id/sa_checkedText1"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox1"/>
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Xonadonni gazlashtirish hujjatlari mavjud"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkedText1" />
+
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="O'rnatilgan gaz jihozlari loyiha hujjatlariga mos"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox2" />
+
+                    <TextView
+                        android:id="@+id/sa_checkedText2"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox3"/>
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="O'rnatilgan gaz jihozlari loyiha hujjatlariga mos"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkedText2" />
+
+                    <TextView
+                        android:id="@+id/sa_textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Bajarilgan xizmat turlari"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox4" />
+                    />
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Texnik ko'rikdan o'tgan"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_textView4" />
+
+                    <TextView
+                        android:id="@+id/sa_checkedText3"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox5"/>
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Profilaktik xizmat"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkedText3" />
+
+                    <TextView
+                        android:id="@+id/sa_checkedText4"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox6"/>
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Servis xizmati"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkedText4" />
+
+                    <TextView
+                        android:id="@+id/sa_checkedText5"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox7"/>
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Konsalting xizmati"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkedText5" />
+
+                    <TextView
+                        android:id="@+id/sa_checkedText6"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox8"/>
+
+
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Sug'urtalangan"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkedText6" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/sa_checkBox10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/robotoflex_variable"
+                        android:text="Gazdan to'g'ri va oqilona foydalanish, texnika va yong'in xavfsizligi qoidalari bilan tanishtirildi."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sa_checkBox9" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/sa_cancel_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sa_checkBox10"
+                app:layout_constraintVertical_bias="0.191">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/robotoflex_variable"
+                    android:text="Narx: "
+                    android:textColor="#AFAFAF" />
+
+                <EditText
+                    android:id="@+id/et_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/robotoflex_variable"
+                    android:hint="Xizmat narxini kiriting"
+                    android:textColor="#000" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/signature_image_view"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toTopOf="@id/sa_cancel_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_price" />
+
+
+            <!-- New TextViews for displaying checkbox states -->
+
+            <TextView
+                android:id="@+id/elektron_imzo"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/robotoflex_variable"
+                android:text="Imzo"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signature_image_view"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/sa_cancel_btn"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/robotoflex_variable"
+                android:text="Tahrirlash"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signature_image_view" />
+
+            <TextView
+                android:id="@+id/sa_save_btn"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/robotoflex_variable"
+                android:text="Jo'natish"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sa_cancel_btn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

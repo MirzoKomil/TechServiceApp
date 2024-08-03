@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coworking.texxizmat.login.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                    android:id="@+id/text_welcome"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="Xush kelibsiz"
+                android:textSize="25sp"
+                android:fontFamily="@font/robotoflex_static_regular"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+
+                />
+
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/logo"
+                android:padding="40dp"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Username"
+        app:boxStrokeColor="@color/blue"
+        app:counterTextColor="@color/blue"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:startIconDrawable="@drawable/email_24"
+        app:endIconMode="clear_text"
+        app:counterEnabled="false"
+        app:counterMaxLength="20"
+        app:helperText="***"
+        app:helperTextTextColor="#E10D0D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Password"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterTextColor="@color/blue"
+        app:startIconDrawable="@drawable/lock"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="false"
+        app:counterMaxLength="20"
+        app:helperText="***"
+        app:helperTextTextColor="#E10D0D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBarMain"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+
+            />
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
+</ScrollView>

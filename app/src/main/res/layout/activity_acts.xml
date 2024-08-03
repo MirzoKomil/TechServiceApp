@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.coworking.texxizmat.ActsActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/chek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ma'lumot mavjud emas"
+            android:textColor="#AEB2B3"
+            android:visibility="gone"/>
+
+
+
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Manzil: "
+                android:textColor="#AFAFAF" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Navoiy c/x (3-sektor), Navoiy, 0, 0"
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Hisob raqami: "
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#AFAFAF" />
+
+            <EditText
+
+                android:id="@+id/et_accountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:hint="0000000000"
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Abonent"
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#AFAFAF" />
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="F.I.SH"
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Tel.raqam: "
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#AFAFAF" />
+
+            <EditText
+                android:id="@+id/et_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Telefon raqami kiriting: "
+                android:fontFamily="@font/robotoflex_variable"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Tekshiruv o'tkaziladigan sana"
+        android:fontFamily="@font/robotoflex_variable"
+        app:boxStrokeColor="@color/blue"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chek">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/baseline_calendar_month_24"
+            android:maxLength="20" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Reestr raqami"
+        android:visibility="gone"
+        android:fontFamily="@font/robotoflex_variable"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etReestr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/correct"
+        android:text="Sizning joylashuvingiz aniqlandi (tez kunda)"
+        android:fontFamily="@font/robotoflex_variable"
+        android:textSize="14sp"
+        android:textColor="#CACACA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="346dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/foto_big"
+            android:layout_width="match_parent"
+            android:layout_height="453dp"
+            android:background="@drawable/solid"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="151dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Tekshiruvdan oldingi uskuna holati"
+        android:fontFamily="@font/robotoflex_variable"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/baseline_add_a_photo_24"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:text="Tekshiruvdan keyingi uskuna holati"
+        android:fontFamily="@font/robotoflex_variable"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ImageView
+            android:id="@+id/foto_big2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/solid" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-35dp"
+
+        android:src="@drawable/baseline_add_a_photo_24"
+
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/foto_big3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/solid" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-35dp"
+        android:src="@drawable/baseline_add_a_photo_24"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout3"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Gaz jihozlari standartlarga javob beradi"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Izoh"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Xonadonni gazlashtirish hujjatlari mavjud"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="O'rnatilgan gaz jihozlari loyiha hujjatlariga mos"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Izoh"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="O'rnatilgan gaz jihozlari loyiha hujjatlariga o'zgartirish kiritish kerak"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:text="Bajarilgan xizmat turlari"
+        android:fontFamily="@font/robotoflex_variable"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+    />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Texnik ko'rikdan o'tgan"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Izoh"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Profilaktik xizmat"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout8"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Xizmat turi"
+        android:fontFamily="@font/robotoflex_variable"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6">
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Servis xizmati"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout9"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Xizmat turi"
+        android:fontFamily="@font/robotoflex_variable"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7">
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Konsalting xizmati"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout10"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Xizmat turi"
+        android:fontFamily="@font/robotoflex_variable"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox8">
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Sug'urtalangan"
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Gazdan to'g'ri va oqilona foydalanish, texnika va yong'in xavfsizligi qoidalari bilan tanishtirildi."
+        android:fontFamily="@font/robotoflex_variable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+
+
+
+    <TextView
+        android:id="@+id/bekor_btn"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Bekor qilish"
+        android:fontFamily="@font/robotoflex_variable"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+    <TextView
+        android:id="@+id/save_btn"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Saqlash"
+        android:fontFamily="@font/robotoflex_variable"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bekor_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

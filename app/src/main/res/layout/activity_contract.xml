@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coworking.texxizmat.ContractActivity"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="HISOB RAQAM QO'SHISH"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/back_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Hisob raqami"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:boxStrokeColor="@color/orange"
+        app:counterTextColor="@color/orange"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+
+        app:helperTextTextColor="#E10D0D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/xisobraqam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Ism"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:boxStrokeColor="@color/orange"
+        app:counterTextColor="@color/orange"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperTextTextColor="#E10D0D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Familiya"
+        app:boxStrokeColor="@color/orange"
+        app:counterTextColor="@color/orange"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperTextTextColor="#E10D0D">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Sharifi"
+        app:boxStrokeColor="@color/orange"
+        app:counterTextColor="@color/orange"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperTextTextColor="#E10D0D">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/middleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Telefon"
+        app:boxStrokeColor="@color/orange"
+        app:counterTextColor="@color/orange"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperTextTextColor="#E10D0D">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:hint="email"
+    app:boxStrokeColor="@color/orange"
+    app:counterTextColor="@color/orange"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    app:endIconMode="clear_text"
+    app:counterEnabled="true"
+    app:counterMaxLength="100"
+    app:helperTextTextColor="#E10D0D">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="100"
+        android:inputType="textEmailAddress"
+        />
+
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Manzil"
+        app:boxStrokeColor="@color/orange"
+        app:counterTextColor="@color/orange"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:helperTextTextColor="#E10D0D">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yuborish"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/blue"
+        android:padding="18dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+
+        />-->
+</LinearLayout>

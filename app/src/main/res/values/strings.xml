@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TexXizmat</string>
+    <string name="welcome_back_you_ve_been_missed__string">Davom etish uchun tizimga kiring!</string>
+    <string name="xonadon_tekshiruvi">Xonadon Tekshiruvi</string>
+    <string name="todo">TODO</string>
+    <string name="enter_username">Enter your username!</string>
+    <string name="enter_password">Enter your password!</string>
+    <string name="connection_error">Error in connection</string>
+    <string name="connected">Connected</string>
+    <string name="invalid_credentials">Invalid username or password!</string>
+
+
+</resources>

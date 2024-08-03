@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coworking.texxizmat.MainMenuActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_logo"
+                android:layout_width="320dp"
+                android:layout_height="147dp"
+                android:layout_marginTop="56dp"
+                android:background="#EAE6D9"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_surname"
+                android:layout_width="320dp"
+                android:layout_height="34dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="320dp"
+                android:layout_height="34dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_fatherName"
+                android:layout_width="320dp"
+                android:layout_height="34dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:text="Tel: "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#888888"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+               android:backgroundTint="@color/blue"
+                android:text="Dalolatnoma tuzish"
+                android:drawableLeft="@drawable/pen"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_contract"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background"
+                android:text="Tarix"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_pincode"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background"
+                android:text="Hisob raqamini qidirish"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_version"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background"
+                android:text="Baza"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_el_imzo"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background"
+                android:text="Elektron imzo"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_admin"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background"
+                android:text="Hodim qo'shish"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
